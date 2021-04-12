@@ -89,6 +89,7 @@ a
   text-decoration: none
   transition: .3s ease
   outline: none
+
   &:hover, &:focus
     text-decoration: none
 
@@ -107,13 +108,17 @@ input, textarea, select
   font-size: 16px
   border: 2px solid rgba(#EEEEEE, .5)
     radius: 19px
+
   &:hover, &:focus
     color: #fff
     border-color: #EEEEEE
+
     + .input-icon
       opacity: 1
+
     &::placeholder
       color: #fff
+
   &::placeholder
     color: rgba(#fff, .5)
 
@@ -226,12 +231,14 @@ h2
 
 .btn-accent
   background: $accent
+
   &:hover
     background: $hover
 
 //header
 header
   padding: 24px 0
+
   .container
     align-items: center
 
@@ -261,6 +268,7 @@ header
     color: $blue
     font-size: 18px
     font-weight: bold
+
   .current
     text-decoration: underline
     font-weight: 900
@@ -274,6 +282,7 @@ main
   background: $blue url("../img/mian-bkg.png") top right no-repeat
   overflow-x: hidden
   padding: 172px 0 430px
+
   .btn
     height: 55px
     font-size: 20px
@@ -295,8 +304,10 @@ footer
   background: #48484a
   padding: 35px 0 24px
   font-size: 16px
+
   a
     color: #fff
+
   .container
     align-items: flex-start
     justify-content: space-between
@@ -309,8 +320,10 @@ footer
 .footer-menu
   li
     margin: 0 0 14px
+
     &:last-child
       margin: 0
+
   .current
     font-weight: 900
     text-decoration: underline
@@ -324,15 +337,19 @@ footer
   display: flex
   align-items: center
   margin: 0 0 0 19px
+
   li
     margin: 0 15px 0 0
+
     &:last-child
       margin: 0
 
 .list-attachment
   margin: 18px 0 0
+
   li
     margin: 0 0 10px
+
     &:last-child
       margin: 0
 
@@ -346,25 +363,31 @@ footer
   max-width: 287px
   width: 100%
   margin: 0 auto
+
   button
     width: 100%
+
   .link
     text-align: center
 
 .main-request
   min-height: 832px
+
   .box-text
     text-align: center
     width: 100%
     font-size: 18px
     font-weight: 300
+
     a
       display: inline-block
       font-size: 18px
       color: #fff
       text-decoration: underline
+
     p
       margin: 0 0 30px
+
       &:last-child
         margin: 0
 
@@ -398,11 +421,12 @@ footer
   max-width: 216px
   width: 100%
   box-sizing: border-box
+
   &:before
     content: ''
     position: absolute
     left: 50%
-    transform: translate(-50%,0)
+    transform: translate(-50%, 0)
     top: -9px
     width: 32px
     height: 9px
@@ -414,10 +438,13 @@ footer
     color: #fff
     border-color: #EEEEEE
     background: rgba(#FF2020, .5)
+
     &::placeholder
       color: #fff
+
   .input-icon
     opacity: 1
+
   .error-box
     display: block
 
@@ -425,14 +452,449 @@ footer
   width: 24px
   cursor: pointer
   display: none
+
   span
     display: block
     width: 100%
     background: $accent
     margin: 0 0 3px
     height: 2px
+
     &:last-child
       margin: 0
+
+//why-quiZone
+.why-quiZone
+  background: #302576
+  padding: 29px 0
+  box-shadow: 0 3px 6px rgba(#000, .8) inset
+
+  .container
+    max-width: 1420px
+    align-items: flex-start
+    justify-content: space-between
+    flex-wrap: wrap
+
+.why-quiZone-box
+  max-width: 330px
+  width: 100%
+  font-size: 18px
+  text-align: center
+
+  .box-text
+    margin: 11px auto 17px
+
+  h3
+    font-size: 36px
+    font-weight: bold
+    color: $accent
+
+  &__img
+    margin: 0 auto
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 156px
+    height: 156px
+    border-radius: 50%
+    overflow: hidden
+
+//.how-quiZone
+.how-quiZone
+  background: #281E7A
+  color: #fff
+  padding: 44px 0 36px
+  box-shadow: 0 3px 6px rgba(#000, .8) inset
+
+  .container
+    max-width: 1420px
+
+  .box-text
+    text-align: center
+    max-width: 1080px
+    margin: 0 auto
+    width: 100%
+    line-height: 35px
+    font-size: 20px
+
+    p
+      margin: 0 0 10px
+
+    span
+      display: block
+      font-size: 14px
+
+  h2
+    font-size: 40px
+    font-weight: bold
+
+
+.color-accent
+  color: $accent
+
+.how-quiZone-img
+  display: flex
+  align-items: center
+  justify-content: center
+  max-width: 400px
+  width: 100%
+  margin: 0 auto
+
+.how-quiZone-content
+  border-bottom: 1px solid rgba($accent, .5)
+  padding: 0 0 30px
+  width: 100%
+
+//quiZone-choice
+.quiZone-choice
+  color: #fff
+  padding: 36px 0
+  width: 100%
+
+  h2
+    font-size: 40px
+    font-weight: bold
+    color: $accent
+
+.text-subtitle
+  text-align: center
+  margin: 0 auto 52px
+  font-size: 20px
+
+.quiZone-choice-wrapper
+  width: 100%
+
+.quiZone-choice-box
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  justify-content: center
+  max-width: 1150px
+  width: 100%
+  margin: 0 auto 70px
+  font-size: 20px
+
+.quiZone-choice-title
+  width: 100%
+
+  h3
+    font-size: 30px
+    font-weight: 500
+
+  p
+    margin: 20px 0 12px
+    font-size: 20px
+
+.quiZone-choice-body
+  width: 100%
+  display: flex
+  align-items: flex-start
+  justify-content: center
+  flex-wrap: wrap
+
+.quiZone-choice-img
+  display: flex
+  align-items: center
+  justify-content: center
+  max-width: 540px
+  width: 100%
+  border: 5px solid #fff
+  height: 208px
+  overflow: hidden
+
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+.quiZone-choice-text
+  width: calc(100% - 540px)
+  padding: 20px 0 0 16px
+
+.list-checkbox
+  li
+    position: relative
+    margin: 0 0 24px
+    padding: 0 0 0 31px
+
+    &:last-child
+      margin: 0
+
+    &:before
+      content: ''
+      position: absolute
+      left: 0
+      top: 0
+      width: 18px
+      height: 18px
+      background: url("../img/checkbox.svg") no-repeat center
+        size: contain
+
+//.how-start
+.how-start
+  background: #302576
+  padding: 38px 0 25px
+  box-shadow: 0 3px 6px rgba(#000, .8) inset
+
+  h2
+    font-weight: bold
+    font-size: 40px
+    color: $accent
+    margin: 0 auto 36px
+
+  .box-text
+    font-size: 20px
+    text-align: center
+    line-height: 35px
+    width: 100%
+
+    span
+      display: block
+      margin: 0 auto
+      font-size: 16px
+
+      a
+        display: inline
+
+    .btn
+      margin: 10px auto 18px
+      height: 55px
+      max-width: 207px
+      width: 100%
+      font-size: 20px
+
+
+.how-start-wrapper
+  width: 100%
+  max-width: 900px
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  justify-content: space-between
+  margin: 0 auto 30px
+
+
+.how-start-box
+  text-align: center
+  margin: 0 0 50px
+  max-width: 200px
+  width: 100%
+  font-size: 20px
+
+  a
+    font-size: 20px
+
+.how-start-box__icon
+  border: 5px solid $accent
+    radius: 50%
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 100px
+  height: 100px
+  margin: 0 auto 4px
+
+//main page
+.main-page
+  padding: 0 0 65px
+  background: #fff
+
+  h1
+    text-align: center
+    margin: 0 auto
+    text-transform: none
+    font-family: $default-font
+
+.main-page-title
+  padding: 70px 0
+  color: #fff
+  background: linear-gradient(to right, rgba(40, 30, 122, 1) 0%, rgba(53, 136, 234, 1) 100%)
+
+
+.main-questions-content
+  padding: 85px 0 0
+
+.question-box
+  width: 100%
+  max-width: 1200px
+  color: #281E7A
+  margin: 0 auto 30px
+  font-size: 20px
+  line-height: 30px
+
+  a
+    text-decoration: underline
+    color: $blue
+    display: inline
+    font-size: 20px
+
+  h4
+    font-weight: bold
+
+  &:last-child
+    margin: 0 auto
+
+.main-how
+  background: $blue
+
+  .main-page-title
+    background: #302576
+    box-shadow: 0 3px 6px rgba(#000, .8)
+
+.main-how-content
+  padding: 37px 0
+  font-size: 20px
+
+  .container
+    flex-direction: column
+    align-items: center
+
+  h4
+    margin: 0 auto 40px
+    text-align: center
+
+.main-how-step
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  max-width: 750px
+  width: 100%
+  margin: 0 auto 67px
+  line-height: 28px
+
+  h3
+    font-size: 24px
+    font-weight: bold
+    margin: 0 0 16px
+
+  span
+    display: block
+    font-size: 16px
+
+  .box-text
+    a
+      font-size: 20px
+      display: inline
+
+.main-how-step__icon
+  width: 133px
+  min-width: 133px
+
+.main-how-step__body
+  width: calc(100% - 133px)
+  padding: 0 0 0 98px
+
+//main-software
+.main-software
+  padding: 0
+  .main-page-title
+    font-size: 20px
+    padding: 45px 0 176px
+    background: url("../img/bg-figure.svg") no-repeat center
+      size: cover
+    box-shadow: none
+    .btn
+      margin: 13px auto 0
+
+    h1
+      margin: 108px auto 61px
+      font-size: 36px
+
+      strong
+        font-size: 46px
+        display: inline-block
+
+      span
+        display: block
+        text-align: right
+        font-size: 25px
+        margin: -14px -80px 0 0
+
+    .box-text
+      line-height: 25px
+      max-width: 800px
+      margin: 0 auto
+      width: 100%
+      font-weight: 300
+
+    .container
+      flex-direction: column
+      align-items: center
+
+
+.main-software-box
+  width: 100%
+  padding: 154px 0 70px
+  background: url("../img/bg-figure1.svg") no-repeat center
+    size: cover
+  margin: -154px 0 0
+  h3
+    font-size: 26px
+    font-weight: 500
+    margin: 0 0 35px
+  .box-text
+    font-size: 20px
+    font-weight: 300
+  .container
+    max-width: 1100px
+    width: 100%
+
+.main-software-box2
+  background: url("../img/bg-figure2.svg") no-repeat center
+    size: cover
+  margin: -70px 0 0
+  padding: 126px 0 149px
+
+.main-software-box3
+  background: url("../img/bg-figure3.svg") no-repeat center
+    size: cover
+  margin: -127px 0 0
+  padding: 127px 0 107px
+
+.main-software-box-footer
+  background: url("../img/bg-figure4.svg") no-repeat center
+    size: cover
+  margin: -103px 0 0
+  padding: 147px 0 66px
+  .container
+    flex-direction: column
+    align-items: center
+    font-size: 20px
+    text-align: center
+    .btn
+      margin: 13px auto
+    span
+      font-size: 16px
+
+.main-software-box__icon
+  max-width: 150px
+  .img
+    width: 150px
+    height: 150px
+    border-radius: 50%
+    display: flex
+    align-items: center
+    justify-content: center
+    overflow: hidden
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+  p
+    font-size: 16px
+    font-weight: bold
+    color: $accent
+    text-align: right
+    padding: 0 30px 0 0
+    span
+      display: block
+      color: #fff
+      font-size: 12px
+      margin: 0 -30px 0 0
+
+.main-software-box__body
+  width: calc(100% - 150px)
+  padding: 0 0 0 84px
 
 @import "media"
 // Всегда в конце
