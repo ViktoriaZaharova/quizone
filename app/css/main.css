@@ -344,6 +344,10 @@ footer {
         -ms-flex-pack: justify;
             justify-content: space-between;
     max-width: 860px; }
+  footer h3 {
+    font-size: 24px;
+    font-weight: 500;
+    margin: 0 0 15px; }
 
 .mail {
   text-align: center;
@@ -359,7 +363,7 @@ footer {
   text-decoration: underline; }
 
 .social-box {
-  margin: 22px 0 0;
+  margin: 48px 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -391,7 +395,7 @@ footer {
   width: 100%;
   text-align: center;
   font-size: 14px;
-  margin: 27px auto 0; }
+  margin: 32px auto 0; }
 
 .form {
   max-width: 287px;
@@ -1146,7 +1150,11 @@ footer {
     .main-software .main-page-title h1 span {
       margin: 0; }
   .main-software .main-page-title .box-text {
-    font-size: 16px; } }
+    font-size: 16px; }
+  footer h3 {
+    font-size: 18px; }
+  .social-box {
+    margin: 25px 0 0; } }
 
 @media (max-width: 625px) {
   header {
@@ -1252,7 +1260,16 @@ footer {
     margin: -120px 0 0; }
   .main-software-box3 {
     padding: 140px 0;
-    margin: -140px 0 0; } }
+    margin: -140px 0 0; }
+  footer h3 {
+    text-align: center;
+    margin: 0 0 10px; }
+  .navigation {
+    margin: 0 20px 0 auto; }
+  .menu li {
+    margin: 0 15px 0 0; }
+    .menu li a {
+      font-size: 12px; } }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 480px) {
